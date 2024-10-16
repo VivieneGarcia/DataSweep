@@ -26,6 +26,6 @@ def remove_duplicates():
     cleaned_csv = output.getvalue()
 
     return jsonify({'message': 'Duplicates removed successfully', 'cleaned_csv': cleaned_csv}), 200
-
+    
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)
